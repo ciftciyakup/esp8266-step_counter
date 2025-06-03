@@ -1,6 +1,12 @@
-# **ESP8266 Step, Distance & Kcal Counter with MPU6050 & AdaFruit IO**
+# **ESP8266, MPU6050 & AdaFruit IO ile  Adım, Mesafe & Kalori Sayacı**
 
 Bu proje, bir ESP8266 kartı, MPU6050 ivmeölçer ve Adafruit IO platformunu kullanarak adım, mesafe ve kalori sayımı yapar.
+
+## **Adafruit IO Panosu**
+
+Proje, Adafruit IO üzerinde adım, mesafe ve kalori verilerini görselleştirmek için bir pano oluşturmanıza olanak tanır.
+
+<img src="https://github.com/ciftciyakup/esp8266-step_counter/blob/main/io.adafruit.com_yakupciftci_dashboards_adim-sayaci.png">
 
 ## **Proje Yapısı**
 
@@ -36,7 +42,7 @@ config.h dosyası, Adafruit IO ve Wi-Fi bağlantınız için önemli bilgileri i
 Örnek config.h içeriği:
 
 \#define IO\_USERNAME "yakupciftci" //  
-\#define IO\_KEY "aio\_nQhc30cDco3IgZ1l0jVSTlR7X7Lm" //  
+\#define IO\_KEY "aio\_nQhc30cDco3" //  
 \#define WIFI\_SSID "laptop" //  
 \#define WIFI\_PASS "yakup123" //
 
@@ -61,7 +67,3 @@ Proje, MPU6050 sensöründen ivme verilerini okur ve y eksenindeki ivme değişi
 4. Arduino IDE'den doğru kartı ve bağlantı noktasını seçin.  
 5. esp8266\_stepcounter.ino dosyasını derleyin ve ESP8266 kartınıza yükleyin.  
 6. Seri Monitörü açarak bağlantı durumunu ve sensör okumalarını takip edebilirsiniz.
-
-## **Adafruit IO Panosu**
-
-Proje, Adafruit IO üzerinde adım, mesafe ve kalori verilerini görselleştirmek için bir pano oluşturmanıza olanak tanır. Proje yapısında bulunan io.adafruit.com\_yakupciftci\_dashboards\_adim-sayaci.png dosyası örnek bir pano görüntüsünü göstermektedir.
